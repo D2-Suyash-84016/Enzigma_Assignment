@@ -1,0 +1,28 @@
+.task-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .task-card {
+    cursor: pointer;
+    transition: transform 0.2s;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .task-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-card.completed {
+    background-color: #d4edda; /* Light green for completed tasks */
+  }
+  
+  .task-card.in-progress {
+    background-color: #fff3cd; /* Light yellow for in-progress tasks */
+  }
+  
+  .task-card.not-started {
+    background-color: #f8d7da; /* Light red for not started tasks */
+  }
+  
